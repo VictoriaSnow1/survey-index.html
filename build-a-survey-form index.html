@@ -1,0 +1,146 @@
+** start of undefined **
+
+<!doctype html>
+ <head>
+  <html lang="en"></html>
+   <meta charset="utf-8">
+   <title>Freecodecamp Survey Form Project</title>
+   <link rel="stylesheet"   href="styles.css">
+ </head>
+ <body>
+  <div class="header">
+  <h1 id="title">Video Game Survey Form</h1>
+   <p id="description">Thank you for taking the time to help us find people's favourite video game!</p></div>
+ </body>
+<form id="survey-form">
+ <fieldset>  
+  <label class="info" for="name" id= "name-label">Name:<input type="text" id="name" placeholder="Enter your name" required></label>
+  <label class="info" for="email" id="email-label">Email:<input type="email" id="email" placeholder="Enter your email" required></label>
+  <label class="info" for="number" id="number-label">Age (optional):<input type="number" min="12" max="99" id="number" placeholder="Age">
+   </label>
+ </fieldset>
+ <fieldset>
+   <legend> What gaming console do you prefer?</legend>
+  <label for="playstation"><input id="playstation" type="radio" name="console-type" value="playstation-console" class="inline" checked>PlayStation
+  </label>
+  <label for="xbox"><input id="xbox" type="radio" name="console-type" value="xbox-console" class="inline">Xbox</label>
+  <label for="nintendo"><input id="nintendo" type="radio" name="console-type" value="nintendo-console" class="inline">Nintendo</label>
+ </fieldset>
+ <fieldset>
+  <legend>What is your favouite game?</legend>
+  <label for="dropdown">
+   <select id="dropdown" name="dropdown">
+    <option value="">(select one)</option>
+    <option value="1">Minecraft</option>
+    <option value="2">Call of Duty</option>
+    <option value="3">GTA</option>
+    <option value="4">Skyrim</option>
+    <option value="5">Fallout</option>
+    <option value="6">Other</option> 
+   </select>
+  </label>
+  </fieldset>
+  <fieldset>
+   <legend>What are your favourite video game genre's? (Check all that apply)</legend>
+  <label for="action"><input type="checkbox" class="inline" id="action" name="genre" value="action-genre" checked>Action
+  </label>
+  <label for="adventure"><input type="checkbox" class="inline" id="adventure" name="genre" value="adventure-genre">Adventure</label>
+  <label for="role-playing"><input type="checkbox" class="inline" id="role-playing" name="genre" value="roleplaying-genre">Role-playing</label>
+  <label for="shooter"><input type="checkbox" class="inline" id="shooter" name="genre" value="shooter-genre">Shooter</label>
+  <label for="sport"><input type="checkbox" class="inline" id="sport" name="genre" value="sport-genre">Sport</label>
+  <label for="simulation"><input type="checkbox" class="inline" id="simulation" name="genre" value="simulation-genre">Simulation</label>
+  <label for="mmo"><input type="checkbox" class="inline" id="mmo" name="genre" value="mmo-genre">MMO (massively multiplayer online)</label>
+  <label for="other"><input type="checkbox" class="inline" id="other" name="genre" value="other-genre">Other</label>
+ </fieldset>
+ <fieldset>
+  <legend>Any other comments on favourite game's or genre's?</legend>
+  <label for="comment"><textarea id="comment" name="comment" row="3" cols="30" placeholder="(e.g., casual, stardew valley,etc...)"></textarea>
+  </label>
+ </fieldset>
+  <button id="submit" type="submit">Submit</button>
+</form>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {background-image: url(https://cdn.lospec.com/palette-examples/coral-4-palette-example-by-yousurname-6137d3.png);
+width: 100%;
+height: 100vh;
+margin: 0;
+padding: 5em 0;
+font-family: Lucida Console
+
+} 
+.header{width: 65%;
+  margin: 0 auto;
+  padding: 2em 2em;
+  background-color: #7c9aacee;
+  }
+
+.info {color: #68518a;
+}
+
+form { width: 65%;
+  margin: 0 auto;
+  padding: 2em 2em;
+  background-color: #7c9aacee;
+}
+
+fieldset { border: none;
+padding: 0.5em 2em;
+padding-bottom: 1em;
+}
+
+h1 { font-size: 40px;
+margin: 1em 0;
+text-align: center;
+color: #68518a;
+
+}
+
+p { margin:  auto;
+text-align: center;
+font-size: 20px;
+padding: 0 0 0.5em 0;
+color: #68518a;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+input { margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+background-color: #f4949c;
+border: 1px solid #f4949c;
+color: #000000;
+font-size: 18px;
+  }
+
+legend { color: #68518a;
+font-size: 18px }
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+button, submit {display: block;
+  width: 40%;
+  margin: 3em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #f4949c;
+  border-color: #f4949c;
+  color: #ffffff
+  min-width: 300px;}
+
+** end of undefined **
+
